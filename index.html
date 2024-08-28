@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Encriptador de texto - Bryan</title>
+  <link rel="icon" href="img/logo_alura.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="container_header">
+    <a class="logo_alura" href="index.html"><img src="img/logo_alura.png" alt="logo_alura"></a>
+  
+    <h1 class="titulo">Encriptador de texto</h1>
+  </header>
+
+  <main>
+    <div class="principal">
+      <section class="panel_izquierdo">
+        <textarea name="input" id="input_texto" class="input_panel" placeholder="Ingrese el texto aqui..." cols="30" rows="10"></textarea>
+        
+        <div class="botones_izq"> 
+          <span class= "advertencia";><img src="img/advertencia.png" alt="advertencia"> Solo minúsculas y sin acento</span>
+          <div class="botones">
+            <button class="boton_encriptar" id="btn_encriptar">Encriptar</button>
+            <button class="boton_desencriptar" id="btn_desencriptar">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+  
+      <section class="panel_derecho">
+        <div class="sin_elementos">
+          <img class="img_figura" src="img/dibujo_figura.png" alt="figura_texto">
+          <div class="mensajes_derecha">
+            <p class="p_mensaje_vacio">Ningún mensaje fue encontrado</p>
+          <p class="p_ingrese_vacio">Ingrese el texto que desees encriptar o desencriptar.</p>
+          </div>
+        </div>
+        <div class="con_elementos" style="display: none;">
+          <p class="texto_derecha"></p>
+          <div class="boton_derecho">
+            <button class="boton_copiar" id="btn_copiar">Copiar</button>
+          </div>
+        </div>
+        
+        
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <p class="texto_footer">&copy Bryan Urizar - 2024</p>
+    <div class="redes">
+      <a href="https://www.github.com/uzrbryan/" target="_blank" title="GitHub"><img class="img_redes" src="img/github.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/bryanurizar/" target="_blank" title="LinkedIn"><img class="img_redes" src="img/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/captar_input.js"></script>
+  <script type="text/javascript" src="js/encriptar.js"></script>
+  <script type="text/javascript" src="js/desencriptar.js"></script>
+  <script type="text/javascript" src="js/copiar.js"></script>
+</body>
+</html>
+
